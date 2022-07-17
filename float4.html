@@ -6,7 +6,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+<style>
+    *{margin: 0; padding: 0; font: inherit;}
+    body{line-height: 1;}
+    ul{list-style: none;}
+    a{color:inherit; text-decoration: none;}
+    img{max-width: 100%; vertical-align: top;}
+
+    header{}
+    header .top{background: #000; height: 200px; position: relative;}
+    header .top h1{background: #fff;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: 50px;
+        text-align: center;}
+    header .top h1 a{display: block; height: 100%;}
+    header .top .sns{background: #fff;
+        position: absolute;
+        top: 0;
+        width: 200px;
+        height: 20px;}
+    header .top .login{background: #fff;
+        position: absolute;
+        top: 0; right: 0;
+        width: 200px;
+        height: 20px;}
+
+    header .bottom{background: #ccc; text-align: center;}
+    header .bottom ul{overflow: hidden;
+        background: #ccc;
+        display: inline-block;
+        vertical-align: top;
+        }
+    header .bottom ul li{float: left;
+        line-height: 60px;
+        padding: 0 20px;
+        font-size: 20px;}
+</style>
 <body>
+    <header>
+        <div class="top">
+            <h1><a href="">logo</a></h1>
+            <div class="sns">sns</div>
+            <div class="login">login</div>
+        </div>
+        <div class="bottom">
+            <ul>
+                <li>메뉴1</li>
+                <li>메뉴2</li>
+                <li>메뉴3</li>
+                <li>메뉴4</li>
+            </ul>
+        </div>
+    </header>
     
+    <style>
+        main{width: 800px; margin: 10px auto;}
+        .top-area{background: #ccc; padding: 10px; margin-bottom: 10px;}
+        .top-area .top{background: #fff; height: 120px; margin-bottom: 10px;}
+        .top-area .bottom{background: #fff; overflow: hidden; padding: 10px;}
+        .top-area .bottom .left{float: left;
+            width: calc((100% - 160px));
+            overflow: hidden;}
+        .top-area .bottom .left li{background: #000;
+            float: left;
+            width: calc((100% - 20px) / 3);
+            margin-right: 10px;
+            height: 100px;}
+        .top-area .bottom .left li:nth-child(3n){margin-right: 0;
+        }
+        .top-area .bottom .left li:nth-child(n+4){margin-top: 10px;}
+        .top-area .bottom .right{float: right; background: #000; width: 150px; height: 210px;}
+    </style>
+    <main>
+        <div class="top-area">
+            <div class="top">
+                top
+            </div>
+            <div class="bottom">
+                <ul class="left">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                </ul>
+                <div class="right">right</div>
+            </div>
+        </div>
+
+        <style>
+            .bottom-area{background: #ccc; padding: 10px;}
+            .bottom-area ul{}
+            .bottom-area ul li{}
+            .bottom-area ul li+li{margin-top: 10px;}
+            .bottom-area ul li a{display: block; height: 100%; overflow: hidden;}
+            .bottom-area ul li img{float: left; object-fit: cover; width: 150px; height: 150px;}
+            .bottom-area ul li p{float: right; height: 150px; background: rgb(130, 130, 130); width: calc(100% - 160px);}
+        </style>
+        <div class="bottom-area">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="./image.jpg" alt="">
+                        <p>문장 내용 단락</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./image.jpg" alt="">
+                        <p>문장 내용 단락</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./image.jpg" alt="">
+                        <p>문장 내용 단락</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./image.jpg" alt="">
+                        <p>문장 내용 단락</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <style>
+        footer{background: #ccc; height: 300px; margin-top: 20px;}
+    </style>
+    <footer></footer>
 </body>
 </html>
